@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SimplifiedToTraditional</title>
+  <link rel="stylesheet" media="all" href="foundation.min.css"/>
+  <script src="jquery.min.js"></script>
+  <script src="index.js"></script>
+  <script src="foundation.min.js"></script>
+</head>
+<body>
+
+<div class="row">
+  <div class="large-10 large-offset-1">
+      源语言：
+      <textarea id="content"></textarea>
+      <div class="row">
+        <div class="medium-4 columns">
+          <label>源语言:
+            <select id="source_lang">
+              <option value="zh_CN">简体中文</option>
+              <option value="zh_TW">繁体中文</option>
+            </select>
+          </label>
+        </div>
+        <div class="medium-4 columns">
+          <label>目标语言:
+            <select id="tar_lang">
+              <option value="zh_TW">繁体中文</option>
+              <option value="zh_CN">简体中文</option>
+            </select>
+          </label>
+        </div>
+        <div class="medium-4 columns">
+          <button class="button" id="trans">翻译</button>
+        </div> 
+          </label>
+        </div>
+      </div>
+      
+      <br/>
+      源语言编码：
+      <textarea id="source_encode"></textarea>
+      目标语言翻译：
+      <textarea id="res_content"></textarea>
+      目标言编码：
+      <textarea id="tar_encode"></textarea>
+  </div>
+</div>
+<script>
+  Trans.init();
+</script>
+</body>
+</html>
